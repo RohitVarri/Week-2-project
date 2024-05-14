@@ -4,11 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
 	background: url('https://e0.pxfuel.com/wallpapers/55/354/desktop-wallpaper-amazing-water-drop.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+background: url('https://e0.pxfuel.com/wallpapers/55/354/desktop-wallpaper-amazing-water-drop.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -466,16 +478,16 @@ input[type="radio"] {
     <div class="row clearfix">
       <div class="">
         <form id="registrationForm">
-          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+          <div class="input_field"> <span><i class="fas fa-user"></i></span>
             <input type="text" name="username" placeholder="Username" required />
           </div>
-          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+          <div class="input_field"> <span><i class="fas fa-envelope"></i></span>
             <input type="email" name="email" placeholder="Email" required />
           </div>
-          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+          <div class="input_field"> <span><i class="fas fa-lock"></i></span>
             <input type="password" name="password" id="password" placeholder=" Enter Password" required />
           </div>
-          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+          <div class="input_field"> <span><i class="fas fa-lock"></i></span>
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter Confirm Password" required />
           </div>
           <div class="input_field radio_option">
